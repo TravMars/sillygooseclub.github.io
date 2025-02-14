@@ -21,14 +21,22 @@
             font-weight: bold;
             margin-top: 20px;
         }
-        .container {
-            flex: 1;
+        .content {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            background-color: white;
             padding: 20px;
+        }
+        .left, .right {
+            width: 45%;
+        }
+        .left {
+            text-align: left;
+            font-size: 1.5em;
+        }
+        .right img {
+            max-width: 100%;
+            height: auto;
         }
         .bottom-border {
             width: 100%;
@@ -39,7 +47,12 @@
 </head>
 <body>
     <h1 class="title">Welcome to the Silly Goose Club!</h1>
-    <div class="container"></div>
+    <div class="content">
+        <div class="left">Who We Are</div>
+        <div class="right">
+            <img src="A_cute_and_chubby_silly_goose_clipart_with_a_playf.png" alt="Silly Goose">
+        </div>
+    </div>
     <div class="bottom-border"></div>
 </body>
 </html>
