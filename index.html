@@ -15,29 +15,28 @@
       min-height: 100vh;
       border: 20px solid pink;
       box-sizing: border-box;
+      font-family: sans-serif;
     }
     .title {
       font-size: 3em;
       font-weight: bold;
       margin-top: 20px;
-      margin-bottom: 0; /* Remove bottom margin to line up with content */
+      margin-bottom: 0;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      font-size: 1.2em;
+      margin: 0 10px;
+      text-decoration: none;
+      color: blue;
     }
     .content {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start; /* Align items to the top */
-      padding: 0 20px 20px 20px; /* Remove top padding */
-    }
-    .left, .right {
-      width: 45%;
-    }
-    .left {
+      display: block;
       text-align: left;
-      font-size: 1.5em;
-    }
-    .right img {
-      max-width: 100%;
-      height: auto;
+      margin: 20px auto;
+      width: 80%;
     }
     .bottom-border {
       position: fixed;
@@ -51,23 +50,25 @@
 </head>
 <body>
   <h1 class="title">Welcome to the Silly Goose Club!</h1>
+
+  <!-- Navigation with Roles link -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="roles.html">Roles</a>
+  </nav>
+
   <div class="content">
-    <div class="left">Who We Are:
-                Ever felt like randomly
-                being silly, spreading fun chaos,
-                or doing something wierd?
-                Then our club is for you! We
-                support wierdness, and encourage
-                silliness! Join the Silly
-                Goose Association (SCA) today by
-                filling out a quiz 
-                (the link is on this page.)
-                e-mail the results to 
-                __________, and
-                we will send back your results.
-                If you get more than 7 questions
-                correct, then we will accept you
-                into our club.</div>
-                <li><a href="webgoosepic1.webp">Silly Chubgoose</a></li>
-    <div class="right">
-      <im
+    <h2>Who We Are</h2>
+    <p>
+      Ever felt like randomly being silly, spreading fun chaos, or doing something weird?
+      Then our club is for you! We support weirdness and encourage silliness!
+      Join the Silly Goose Association (SGA) today by filling out a quiz 
+      (the link is on this page), e-mail the results to [YOUR EMAIL HERE],
+      and we will send back your results. If you get more than 7 questions correct,
+      then we will accept you into our club.
+    </p>
+  </div>
+
+  <div class="bottom-border"></div>
+</body>
+</html>
